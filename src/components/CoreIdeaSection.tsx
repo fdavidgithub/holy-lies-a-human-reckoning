@@ -7,13 +7,13 @@ const StatCard = ({ label, value, delay }: { label: string; value: string; delay
   return (
     <div 
       ref={ref}
-      className={`p-6 bg-card border border-border rounded-sm transition-all duration-500 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+      className={`p-4 bg-card border border-border rounded-sm transition-all duration-500 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
       style={{ animationDelay: `${delay}s` }}
     >
-      <p className="text-3xl md:text-4xl font-display font-semibold text-accent mb-2">
+      <p className="text-2xl md:text-3xl font-display font-semibold text-accent mb-1">
         {value}
       </p>
-      <p className="text-sm text-text-secondary font-body">
+      <p className="text-xs text-text-secondary font-body">
         {label}
       </p>
     </div>
@@ -51,16 +51,22 @@ export const CoreIdeaSection = () => {
                 {t('idea.p2')}
               </p>
               <p 
-                className={`text-lg text-accent font-body leading-relaxed font-medium transition-all duration-500 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+                className={`text-lg text-text-secondary font-body leading-relaxed transition-all duration-500 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
                 style={{ animationDelay: '0.3s' }}
               >
                 {t('idea.p3')}
               </p>
+              <p 
+                className={`text-lg text-accent font-body leading-relaxed font-medium transition-all duration-500 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}
+                style={{ animationDelay: '0.4s' }}
+              >
+                {t('idea.p4')}
+              </p>
             </div>
           </div>
 
-          {/* Right: Stat cards */}
-          <div className="space-y-4" key={`stats-${language}`}>
+          {/* Right: Stat cards - Grid layout for 7 items */}
+          <div className="grid grid-cols-2 gap-3" key={`stats-${language}`}>
             <StatCard 
               label={t('idea.stat1.label')} 
               value={t('idea.stat1.value')} 
@@ -69,13 +75,35 @@ export const CoreIdeaSection = () => {
             <StatCard 
               label={t('idea.stat2.label')} 
               value={t('idea.stat2.value')} 
-              delay={0.2}
+              delay={0.15}
             />
             <StatCard 
               label={t('idea.stat3.label')} 
               value={t('idea.stat3.value')} 
+              delay={0.2}
+            />
+            <StatCard 
+              label={t('idea.stat4.label')} 
+              value={t('idea.stat4.value')} 
+              delay={0.25}
+            />
+            <StatCard 
+              label={t('idea.stat5.label')} 
+              value={t('idea.stat5.value')} 
               delay={0.3}
             />
+            <StatCard 
+              label={t('idea.stat6.label')} 
+              value={t('idea.stat6.value')} 
+              delay={0.35}
+            />
+            <div className="col-span-2">
+              <StatCard 
+                label={t('idea.stat7.label')} 
+                value={t('idea.stat7.value')} 
+                delay={0.4}
+              />
+            </div>
           </div>
         </div>
       </div>
