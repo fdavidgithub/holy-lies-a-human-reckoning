@@ -4,6 +4,7 @@ import { HeroSection } from '@/components/HeroSection';
 import { CoreIdeaSection } from '@/components/CoreIdeaSection';
 import { TimelineSection } from '@/components/TimelineSection';
 import { ComparisonSection } from '@/components/ComparisonSection';
+import { DeathComparisonChart } from '@/components/DeathComparisonChart';
 import { ExtinctionSection } from '@/components/ExtinctionSection';
 import { MethodSection } from '@/components/MethodSection';
 import { FinalSection } from '@/components/FinalSection';
@@ -18,6 +19,7 @@ const Index = () => {
         <CoreIdeaSection />
         <TimelineSection />
         <ComparisonSection />
+        <DeathComparisonChart />
         <ExtinctionSection />
         <MethodSection />
         <FinalSection />

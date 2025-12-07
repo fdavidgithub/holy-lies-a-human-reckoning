@@ -8,6 +8,7 @@ const navItems = [
   { key: 'nav.idea', href: '#idea' },
   { key: 'nav.timeline', href: '#timeline' },
   { key: 'nav.comparison', href: '#comparison' },
+  { key: 'nav.deathChart', href: '#death-chart' },
   { key: 'nav.extinction', href: '#extinction' },
   { key: 'nav.method', href: '#method' },
   { key: 'nav.end', href: '#end' },
