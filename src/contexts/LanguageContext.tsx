@@ -30,7 +30,7 @@ const translations: Record<Language, Record<string, string>> = {
     'idea.p1': 'Deus é descrito como amor absoluto, fonte de toda compaixão e bondade.',
     'idea.p2': 'Diabo é descrito como o mau absoluto, fonte de toda indifernça e crueldade.',
     'idea.p3': 'Homem é um ser livre em conflito, capaz de escolher entre o bem e o mal.',
-    'idea.p4': 'Mas "historicamente", o Diabo é quem menos participo de massacres, sendo o maior culpado por orgias e heavy metal.',
+    'idea.p4': 'Mas "historicamente", o Diabo é quem menos participou de massacres, sendo o culpado pelas orgias e heavy metal.',
     
     'idea.stat1.label': 'Extinções em massa: causas naturais',
     'idea.stat1.value': '5',
@@ -41,7 +41,7 @@ const translations: Record<Language, Record<string, string>> = {
     'idea.stat4.label': 'Extinçoes em massa: Homem',
     'idea.stat4.value': 'quase 1',
     'idea.stat5.label': 'Doenças naturais',
-    'idea.stat5.value': '5+',
+    'idea.stat5.value': '20+',
     'idea.stat6.label': 'Pragas divinas',
     'idea.stat6.value': '10',
     'idea.stat7.label': 'Conflitos humanos',
