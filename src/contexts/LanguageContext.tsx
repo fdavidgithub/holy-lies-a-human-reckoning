@@ -39,7 +39,7 @@ const translations: Record<Language, Record<string, string>> = {
     'idea.stat3.label': 'Extinçoes em massa: Diabo',
     'idea.stat3.value': '0',
     'idea.stat4.label': 'Extinçoes em massa: Homem',
-    'idea.stat4.value': 'quase 1',
+    'idea.stat4.value': '~1',
     'idea.stat5.label': 'Doenças naturais',
     'idea.stat5.value': '20+',
     'idea.stat6.label': 'Pragas divinas',
